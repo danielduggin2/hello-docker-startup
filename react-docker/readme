@@ -1,0 +1,48 @@
+# Getting Started with Docker
+
+Create a project. In my case, I created a folder called hello-Docker
+
+From there I created my Dockerfile
+
+# To Run the Project (Once React Setup is complete)
+
+To build out the image
+
+```
+docker build -t react-docker .
+```
+
+Next run with port mapping
+
+```
+docker run -p 5173:5173 react-docker
+```
+
+Local now works
+
+# DockerFile Explained
+
+See Dockerfile within hello-docker
+
+# Initializing with Basic React app
+
+First, ensure npm is installed on your machine (HomeBrew for mac or nvm for windows)
+Then run the command:
+
+```
+npm create vite@latest react-docker
+```
+
+Then select your preferences
+
+We do not need to run npm install because dependencies are installed in our dockerized container
+
+From there,
+
+```
+cd react-docker
+```
+
+# Dockerfile within react-docker
+
+See Dockerfile within react-docker folder

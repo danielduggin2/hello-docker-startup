@@ -1,0 +1,28 @@
+# Docker Compose
+
+A simplified version of the react-docker setup within the repo
+After creatinf our project, we just run:
+
+```
+docker init
+```
+
+It will ask some questions, answer them based on your project needs
+
+# yaml file
+
+After adding volumes to our yaml file, we can run:
+
+```
+docker compose up
+```
+
+Results may very depending on permissions. On mac/linux, add sudo before the command
+
+You may want to delete current images in Docker desktop (except the one creating right now) to see this process through
+
+# Common Issue
+
+If you get to this point, you most likely forgot to add --host to your vite settings in package.json
+
+Note: You can use CTRL C to stop running the project. This stops the container in Docker desktop instead of creating an absurd amount when you rerun. This is thanks to Docker compose
